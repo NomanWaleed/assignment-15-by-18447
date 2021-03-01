@@ -1,0 +1,15 @@
+/* body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-8 div {
+    height: 500px;
+  } */
+
+  #maxAnswer, #maxAnswer2, #maxAnswer3, #maxAnswer4, #maxAnswer5, #maxAnswer6, #maxAnswer7, #maxAnswer8{
+    color: green;
+    text-align: center;
+  }

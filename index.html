@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    
+<div class="container mt-3">
+    <h2>Assignment-15 by M.Noman Waleed (18447)</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#conditions">Conditions
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">Strings Handling</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Array Handling</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Math Methods</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Loops</a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="conditions" class="container tab-pane active"><br>
+
+        <!-- Question-1 -->
+        <h4>Question-1: Write a js program to find maximum between two numbers.</h4>
+
+        <form class="was-validated">
+            <div class="form-group">
+                <label for="uname">Enter 1st Number</label>
+                <input type="number" class="form-control" id="firstNumber" minlength="1" placeholder="e.g. 1" name="firstNumber" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="uname">Enter 2nd Number</label>
+                <input type="number" class="form-control" id="secondNumber" minlength="1" placeholder="e.g 2" name="secondNumber" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            <button type="submit" class="btn btn-primary" id="submitEvent"  onclick="return maxNumber()">Check</button>
+            <h4 id="maxAnswer"></h4>
+          </form>
+          <hr>
+
+          <!-- Question-2  -->
+          <h4>Question-2: Write a js program to find maximum between three numbers.</h4>
+
+          <form class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Enter 1st Number</label>
+                  <input type="number" class="form-control" id="firstNumber2" minlength="1" placeholder="e.g. 1" name="firstNumber" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <label for="uname">Enter 2nd Number</label>
+                    <input type="number" class="form-control" id="secondNumber2" minlength="1" placeholder="e.g 2" name="secondNumber" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="uname">Enter 3rd Number</label>
+                    <input type="number" class="form-control" id="thirdNumber2" minlength="1" placeholder="e.g 2" name="secondNumber" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="submitEvent2" onclick="return maxNumber3()">Check</button>
+              <h4 id="maxAnswer2"></h4>
+            </form>
+            <hr>
+   
+            <!--Question-3  -->
+            <h4>Question-3: Write a js program to check whether a number is negative, positive or zero.
+            </h4>
+
+          <form class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Enter Any Number</label>
+                  <input type="number" class="form-control" id="firstNumber3" minlength="1" placeholder="e.g. 1" name="firstNumber" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                  <button type="submit" class="btn btn-primary" id="submitEvent3" onclick="return checkNPZ()">Check</button>
+              <h4 id="maxAnswer3"></h4>
+            </form>
+            <hr>
+            
+            <!--Question-4  -->
+            <h4>Question-4: Write a js program to check whether a number is divisible by 5 and 11 or not.</h4>
+
+          <form class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Enter Any Number</label>
+                  <input type="number" class="form-control" id="firstNumber4" minlength="1" placeholder="e.g. 1" name="firstNumber" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                  <button type="submit" class="btn btn-primary" id="submitEvent4" onclick="return check5or11()">Check</button>
+              <h4 id="maxAnswer4"></h4>
+            </form>
+            <hr>
+            
+            <!--Question-5  -->
+            <h4>Question-5: Write a js program to check whether a number is even or odd.</h4>
+
+          <form class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Enter Any Number</label>
+                  <input type="number" class="form-control" id="firstNumber5" minlength="1" placeholder="e.g. 1" name="firstNumber" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                  <button type="submit" class="btn btn-primary" id="submitEvent5" onclick="return checkevenOrOdd()">Check</button>
+              <h4 id="maxAnswer5"></h4>
+            </form>
+            <hr>
+            
+            <!--Question-6  -->
+            <h4>Question-6: Write a js program to check whether a year is leap year or not.</h4>
+
+          <form class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Enter Any Number</label>
+                  <input type="number" class="form-control" id="firstNumber6" minlength="1" placeholder="e.g. 1" name="firstNumber" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                  <button type="submit" class="btn btn-primary" id="submitEvent6" onclick="return checkLeapOrNot()">Check</button>
+              <h4 id="maxAnswer6"></h4>
+            </form>
+            <hr>
+            
+            <!--Question-7  -->
+            <h4>Question-7: Write a js program to check whether a character is alphabet or not.
+            </h4>
+
+          <form class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Type Something : </label>
+                  <input type="text" class="form-control" id="firstNumber7" minlength="1" placeholder="e.g. a,b,c" name="firstNumber" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                  <button type="submit" class="btn btn-primary" id="submitEvent7" onclick="return allLetter(firstNumber7)">Check</button>
+              <h4 id="maxAnswer7"></h4>
+            </form>
+            <hr>
+            
+            <!--Question-8  -->
+            <h4>Question-8: Write a js program to input any alphabet and check whether it is vowel or consonant.</h4>
+
+          <form class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Type Something : </label>
+                  <input type="text" class="form-control" id="firstNumber8" minlength="1" placeholder="e.g. a,b,c" name="firstNumber" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                  <button type="submit" class="btn btn-primary" id="submitEvent8" onclick="return checkVowel()">Check</button>
+              <h4 id="maxAnswer8"></h4>
+            </form>
+            <hr>
+            
+      </div>
+      <div id="menu1" class="container tab-pane fade"><br>
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+    </div>
+  </div>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
